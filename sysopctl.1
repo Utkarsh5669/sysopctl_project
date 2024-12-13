@@ -1,0 +1,39 @@
+.TH sysopctl 1 "December 2024" "sysopctl v1.0" "System Administration"
+.SH NAME
+sysopctl \- A command-line tool for managing system services, processes, and health.
+.SH SYNOPSIS
+.B sysopctl
+[\fIcommand\fR] [options]
+.SH DESCRIPTION
+sysopctl is a command-line tool used to manage system services and processes. It allows users to list, start, and stop services, and check the system's health.
+
+.SH COMMANDS
+.TP
+.B service list
+List all the currently active services.
+.TP
+.B service start <service-name>
+Start a service by providing its name.
+.TP
+.B service stop <service-name>
+Stop a service by providing its name.
+.TP
+.B --help
+Display help information about the sysopctl tool.
+.TP
+.B --version
+Display the current version of sysopctl.
+.SH EXAMPLES
+To list services:
+.PP
+sysopctl service list
+.PP
+To start a service:
+.PP
+sysopctl service start <service-name>
+.PP
+To stop a service:
+.PP
+sysopctl service stop <service-name>
+.SH AUTHOR
+Utkarsh Arora
